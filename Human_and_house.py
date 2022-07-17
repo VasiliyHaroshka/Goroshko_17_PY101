@@ -47,8 +47,9 @@ class SmallHouse(House):
         super().__init__(SmallHouse.default_area, price)
 
 
-p = Human(700, "no house")
-sh = SmallHouse(900)
-p.buy_house(sh, 10)
-p.earn_money(200)
-p.buy_house(sh, 10)
+if __name__ == "__main__":
+    p = Human(700, "no house")
+    sh = SmallHouse(900)
+    p.buy_house(sh, 10)
+    p.earn_money(200)
+    p.buy_house(sh, 10)
